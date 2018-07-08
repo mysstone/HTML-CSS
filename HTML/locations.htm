@@ -1,0 +1,211 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>CU Denver Great clubs</title>
+  <!-- CUDenver Great clubs
+  Author: Mitchell Stone
+  Date: 4/24/18
+  -->
+
+      <link href="styles.css" rel="stylesheet" type="text/css" />
+      <link href="styles2.css" media="only screen and (min-width: 780px)" rel="stylesheet" type="text/css" />
+      <link href="mobile.css" media="only screen and (max-width: 779px)" rel="stylesheet" type="text/css" />
+      <link href="print.css" media="only print" rel="stylesheet" type="text/css" />
+      <link hreg="zones.css" rel="stylesheet" type="text/css" />
+
+      <script>
+          /*
+          Within the embedded script element, create a function named worldClock() that will calculate the time in different time zones.
+          Within this function, do the following:
+          Create a date object variable named today that is equal to the current date and time.
+          Apply the getTimezoneOffset() method to the today variable to calculate the offset of your computer's clock from GMT in minutes.
+          Change this value to milliseconds by multiplying the value by 60 and then by 1000. Store the result in a variable named offSet.
+           Call the addTime() function (you created) using today as the first parameter value and offSet as the second.
+           Store the value returned by this function in a variable named GMT.
+          The GMT variable represents the current date and time in Greenwich.
+          Calculate the current date and time at your first location (e.g Denver).
+          To calculate this value, call the addTime() function with GMT as the first parameter and the second parameter equal to the number
+          of milliseconds that Denver is offset from GMT. (Hint: Because Denver is 420 minutes behind Greenwich, the offset from GMT is
+          equal to (-420)*60*1000.)
+          Store the date object returned by the addTime() function in a variable named time1.
+          Repeat this step to create variables named time2 through time6 for the other five locations using the offset values listed
+          above (or your own offset values if you choose to use different locations than the ones provided).
+          The current times for the six locations are to be displayed in input fields named place1 through place6 in the zones Web form.
+          To display the value of the place1 field, call the showTime() function using the time1 variable as the parameter value.
+          Repeat this step for the five remaining input fields.
+
+
+          */
+            function worldClock(){
+              var today  = new Date();
+              var offset = today.getTimezoneOffset() * 60 * 1000;
+              var GMT = addTime(today,offset);
+/*
+Calculate the current date and time at your first location (e.g Denver).
+To calculate this value, call the addTime() function with GMT as the first parameter and the second parameter
+equal to the number of milliseconds that Denver is offset from GMT. (Hint: Because Denver is 420 minutes behind Greenwich,
+the offset from GMT is equal to (-420)*60*1000.)
+Store the date object returned by the addTime() function in a variable named time1.
+Repeat this step to create variables named time2 through time6 for the other five locations using the offset values
+listed above (or your own offset values if you choose to use different locations than the ones provided).
+*/
+              time1 = addTime(GMT, -360 * 60 * 1000);
+
+              time2 = addTime(GMT, 0);
+              time3 = addTime(GMT, -300 * 60 * 1000);
+              time4 = addTime(GMT, -480 * 60 * 1000);
+              time5 = addTime(GMT, 660 * 60 * 1000);
+
+              time6 = addTime(GMT, 540 * 60 * 1000);
+
+              myTimer = setTimeout("worldClock()", 1000)
+/*
+The current times for the six locations are to be displayed in input fields named place1 through place6 in the zones Web form.
+To display the value of the place1 field, call the showTime() function using the time1 variable as the parameter value.
+Repeat this step for the five remaining input fields.
+*/
+              document.forms.zones.place1.value = showTime(time1);
+              document.forms.zones.place2.value = showTime(time2);
+              document.forms.zones.place3.value = showTime(time3);
+              document.forms.zones.place4.value = showTime(time4);
+
+            //  document.writeln.forms.zones.pl
+
+              document.forms.zones.place5.value = showTime(time5);
+              document.forms.zones.place6.value = showTime(time6);
+
+            }
+            </script>
+  </head>
+
+
+<body onload="worldClock()">
+  <div id="background">
+  <div id="layout">
+    <header>
+    <div id="header">
+      <h1 class="heading">Welcome to the Modern Capital! </h1>
+    </div>
+    <div id="tagline">
+      <h2>Your source for the most comprehensive deck listings </h2>
+      <img
+        src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=227676&amp;type=card"
+        alt="Snapcaster Mage" width="223" height="310"> <img
+        src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=397682&amp;type=card"
+        alt="Tarmogoyf" width="223" height="310"> <img
+        src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=370600&amp;type=card"
+        alt="Young Pyromancer" width="223" height="310"> <img
+        src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=397731&amp;type=card"
+        alt="Dark Confidant" width="223" height="310"> <img
+        src="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=270445&amp;type=card"
+        alt="Thalia, Guardian of Thraben" width="223" height="310">
+  </div>
+
+  </header>
+
+    <nav>
+      <h2 class="navno">Navigation</h2>
+        <ul class ="menu">
+          <li><a href="index.htm">Home</a></li>
+          <li><a href="about.htm">About Us</a></li>
+          <li><a href="contact.htm">Contact Us</a></li>
+          <li><a href="decks.htm">Decks</a></li>
+        </ul>
+    </nav>
+
+  <div id="Content">
+
+    <form id="zones" name="zones" action="">
+
+    <h2>World Clock</h2>
+
+    <div id="timemap">
+
+       <input id="place1" name="place1" size="7"  />
+       <input id="place2" name="place2" size="7"  />
+       <input id="place3" name="place3" size="7"  />
+       <input id="place4" name="place4" size="7"  />
+       <input id="place5" name="place5" size="7"  />
+       <input id="place6" name="place6" size="7"  />
+
+       <img src="map.jpg" alt="World Map" id="map" />
+       <table>
+       <tr>
+       <th id="name1">Denver</th>
+       <th id="name2">London</th>
+       <th id="name3">New York</th>
+       <th id="name4">Seattle</th>
+       <th id="name5">Sydney</th>
+       <th id="name6">Tokyo</th>
+       </tr>
+       </table>
+       <table>
+       <tr>
+       <td id="address3">
+          <p><b>Your Company NY</b><br />
+             10010 Park Street<br />
+             New York, NY 10001<br />
+             <b>Phone: </b>(212) 555-1209<br />
+             <b>Fax: </b>(212) 555-4001
+          </p>
+       </td>
+       <td id="address4">
+          <p><b>Your Company NW</b><br />
+             2349 Mitchell Street<br />
+             Seattle, WA 65091<br />
+             <b>Phone: </b>(381) 555-5499<br />
+             <b>Fax: </b>(381) 555-3181
+          </p>
+       </td>
+       <td id="address1">
+          <p><b>Your Company Denver</b><br />
+             1250 14th Street<br />
+             Denver, CO 80202<br />
+             <b>Phone: </b>(303) 315-8000<br />
+             <b>Fax: </b>(303) 315-8199
+          </p>
+       </td>
+       </tr>
+       <tr>
+       <td id="address2">
+          <p><b>Your Company Europe</b><br />
+             18 Northland Avenue<br />
+             London, England WC2N 5EA<br />
+             <b>Phone: </b>(+44) 0 870 555 7081<br />
+             <b>Fax: </b>(+44) 0 870 555 1788
+          </p>
+       </td>
+       <td id="address5">
+          <p><b>Your Company Pacifica</b><br />
+             171-105 Thomas Street<br />
+             Sydney NSW 2000, Australia<br />
+             <b>Phone: </b>(+61) 2 5555 8993<br />
+             <b>Fax: </b>(+61) 2 5555 7171
+          </p>
+       </td>
+       <td id="address6">
+          <p><b>Your Company Asia</b><br />
+             1-2-99 Sumiyoshi<br />
+             Hakata-Ku<br />
+             Tokyo 140-8781 Japan<br />
+             <b>Phone: </b>(+81) 3 5551 7817<br />
+             <b>Fax: </b>(+81) 3 5551 2398
+          </p>
+       </td>
+       </tr>
+       </table>
+    </div>
+    </form>
+
+</div>
+</div>
+</div>
+</div>
+<footer><em> Copyright 2016 Seth Moyes</em> </footer>
+
+
+
+</body>
+
+</html>

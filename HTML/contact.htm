@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>CUDenver Great Clubs</title>
+  <!-- CUDenver Clubs
+  Author: Mitchell Stone
+  Date: 2/24/2018
+  -->
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="styles2.css" media="only screen and (min-width: 780px)" rel="stylesheet" type="text/css" />
+  <link href="mobile.css" media="only screen and (max-width: 779px)" rel="stylesheet" type="text/css" />
+  <link href="print.css" media="only print" rel="stylesheet" type="text/css" />
+<style type="text/css"> 
+fieldset {
+  background-color: #A2A4A3;
+  border-color: white;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+span {
+color: red;
+}
+
+#custinfo input {
+  position: absolute;
+  margin-left: 140px;
+  left: 140px;
+}
+
+.blockLabel {
+  display: block;
+  position: relative;
+  width: 450px;
+  margin: 12px 0px 12px 0px;
+}
+
+#fName {
+  width: 250px;   
+}
+
+#lName {
+  width: 250px;
+}
+
+#email {
+  width: 350px;
+}
+
+#street {
+  width: 350px;
+}
+
+#phone {
+  width: 150px;
+}
+
+#city {
+  width: 150px;
+}
+
+#state {
+  width: 40px;
+}
+
+#zip {
+  width: 80px;
+}
+
+/*mList Fieldset Styles */
+
+#mList {
+  width: 450px;
+  padding:5px;
+}
+
+/*Checkbox Fieldset Styles */
+
+#interestFields {
+  position: relative;
+  width: 450px;
+  height: 120px;
+  padding: 5px;
+}
+
+#interest1 {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}  
+
+#interest2 {
+  position: absolute;
+  top: 20px;
+  left: 140px;
+}
+
+#interest3 {
+  position: absolute;
+  top: 20px;
+  left: 280px;
+}
+
+#interest4 {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+#interest5 {
+  position: absolute;
+  top: 50px;
+  left: 140px;
+}
+
+#interest6 {
+  position: absolute;
+  top: 50px;
+  left: 280px;
+}
+
+#interest7 {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+}
+
+#interest8 {
+  position: absolute;
+  top: 80px;
+  left: 140px;
+}
+
+#interest9 {
+  position: absolute;
+  top: 80px;
+  left: 280px;
+}
+</style>
+  <script src="random.js"> </script>
+
+  <script type="text/javascript">
+
+
+  function showImg() {
+  /*The showImg()() function displays a random image from the 0.jpg through 9.jpg files.
+  The random image is designed to thwart spammers
+  attempting to use the form to send junk email by requiring visual confirmation. */
+  var imgNumber = randomInteger(9); //Return a random number from 0 to 9.
+  document.write ("<img src='" + imgNumber + ".jpg' alt='' />");
+  }
+</script>
+
+
+</head>
+
+<body>
+<div id="background">
+
+<body>
+  <div id="layout">
+    <header>
+<div id="header">
+      <h1 class="heading">CUDenverStudentClub.com </h1>
+    </div>
+
+
+  <div id="tagline">
+    <h2>Your student adventures begin here... </h2>
+      <img
+        src="student1.jpg"
+        alt="Mindy" width="223" height="310"> <img
+        src="student2.jpg"
+        alt="Roger" width="223" height="310"> <img
+        src="student3.jpg"
+        alt="Nancy" width="223" height="310"> <img
+        src="student4.jpg"
+        alt="Sally" width="223" height="310"> <img
+        src="student5.jpg"
+        alt="Deidra" width="223" height="310">
+  </div>
+</header>
+
+    <nav>
+      <h2 class="navno">Navigation</h2>
+        <ul class ="menu">
+          <li><a href="index.htm">Home</a></li>
+          <li><a href="about.htm">About Us</a></li>
+          <li><a href="contact.htm">Contact Us</a></li>
+          <li><a href="office.htm">Officers</a></li>
+          <li><a href="Order.htm">Order</a></li>
+        </ul>
+    </nav>
+
+<article>
+<div id="content">
+<div id="contact1">
+  <div id="contact">
+<h3>Contact Us</h3>
+ 
+    <h4>Address</h4>
+    <address>
+    <p>1250 14th Street, <br>Suite 200<br>
+    Denver, CO <br>80202</p>
+    </address>
+    <h4>Phone</h4>
+    <p>303-555-1212</p>
+  </div>
+<p>Please send any questions or concerns to the following address!<br>
+<a href="mailto: mitchell.stone@ucdenver.edu" target="_top">Contact CU Denver</a></p>
+<br>
+<br>
+<img src="cudenverpicture.jpg" width="527" height="289">
+
+<form id="conctactForm" action="mailto:stonemitch97@gmail.com" method="POST">
+  <p>* indicates a required field</p>
+  <fieldset id="custinfo">
+    <legend>Customer Information</legend>
+
+      <label class="blockLabel" for="fName">First Name<span>*</span>
+      <input name="fName" id="fName" required="required" />
+      </label>
+
+      <label class="blockLabel" for="lName">Last Name<span>*</span>
+      <input name="lName" id="lName" required="required" />
+      </label>
+
+      <label class="blockLabel" for="email">Email Address<span>*</span>
+      <input name="email" id="email" type="email" required="required" />
+      </label>
+
+      <label class="blockLabel" for="street">Street
+      <input name="street" id="street" />
+      </label>
+
+      <label class="blocklabel" for="city">City
+      <input name="city" id="city" />
+      </label>
+
+      <label class="blockLabel" for="state">State
+      <input name="state" id="state" value="CO" />
+      </label>
+
+      <label class="blockLabel" for="zip">Zip
+      <input name="zip" id="zip" max="10" min="2" />
+      </label>
+
+      <label class="blockLabel" for="phone">Phone
+      <input name="phone" id="phone" type="tel"/>
+      </label>
+  </fieldset>
+
+  <fieldset id="otherInfo">
+    <legend>Other Information</legend>
+      <label class="blockLabel">
+        How did you hear about CUDenver great clubs?
+      <select name="infoSrc" id="infoSrc" >
+     
+                  <option value="internet">Internet</option>
+                  <option value="ads">TV or Radio Ad</option>
+                  <option value="phonebook">Phone Book</option>
+                  <option value="talk">Word of Mouth</option>
+                 <option value="schools">College or High School</option> 
+         </label>
+        </select> 
+    <fieldset class="mailinglist">
+    <legend>Do you want to be on our mailing list?</legend>
+    
+        <label for="Yes">Yes</label> 
+        <input type="radio" name="mailinglist" id="mYes" value="Yes" />
+        <label for="No">No</label> 
+        <input type="radio" name="mailinglist" id="mNo" value="No" />
+    
+    </fieldset>
+
+  <fieldset id="interestFields">
+    <legend>I want information on: (Select all that apply)</legend>
+
+            <label id="interest1">
+            <input  type="checkbox" name="interest1"  value="1" />
+            Meetups</label>
+
+            <label id="interest2">
+            <input type="checkbox" name="interest2" value="2" />
+            Club Info</label>
+            
+            <label id="interest3">
+            <input type="checkbox" name="interest3" value="3" />
+            Club Officers</label>
+
+            <label id="interest4">
+            <input type="checkbox" name="interest4" value="4" />
+            Club fees</label>
+
+            <label id="interest5">
+            <input type="checkbox" name="interest5" value="5" />
+            Create new club</label>
+
+            <label id="interest6">
+            <input type="checkbox" name="interest6" value="6" />
+            Connect</label>
+
+            <label id="interest7">
+            <input type="checkbox" name="interest8" value="7" />
+            Rehab</label>
+
+            <label id="interest8">
+            <input type="checkbox" name="interest9" value="8" />
+            I see you Andrew! </label>
+
+            <label id="interest9">
+            <input type="checkbox" name="interest9" value="9" />
+            Good job Professor Reddy! Keep it up!</label>
+    
+  </fieldset>
+    <label class="blockLabel" id="comments"> Ask your Question!
+      <textarea name="comments" id="comments" rows="5" maxlength="55"></textarea>
+    </label>
+  </fieldset>
+  <input type="submit" value="submit">
+  <input type="reset" value="cancel">
+
+   <p>
+      <p> <label class="captcha">As a final security check, enter the 5 numbers you see displayed below.</label>
+            <input type="text" id="captcha" size="6"> </p>
+            <script type="text/javascript">
+            showImg();
+            showImg();
+            showImg();
+            showImg();
+            showImg();
+      </script>
+    </p>
+
+  <input type="submit" value="submit">
+  <input type="reset" value="cancel">
+
+
+
+
+</form>
+
+</div>
+
+</div>
+</article>
+<footer><em> Copyright 2018 Mitchell Stone</em> </footer>
+</body>
+</html>
