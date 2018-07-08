@@ -1,0 +1,15 @@
+/* Open mobile.css style sheet file and add the following styles to further optimize the site for mobile devices:
+Create a style for the body, layout container and navigation bulleted list (nav ul or #nav ul) that sets the margins to 0,
+the padding to 0 and the width to 100%.
+Save your mobile.css file.
+
+Author: Mitchell Stone Date: March 15th, 2018
+
+
+*/
+
+body, .layout, #layout, nav ul, #nav {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+}

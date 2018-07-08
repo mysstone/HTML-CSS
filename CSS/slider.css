@@ -1,0 +1,114 @@
+/*
+   Contact Slider Style Sheet
+   Author: Dawn Gregg
+   Date:   9/17/2012
+
+   Filename:         slider.css
+   Supporting Files: none
+
+*/
+
+.sl-slider {
+    margin: 0 auto 15px auto;
+    position: relative;
+    width: 359px;
+}
+
+.sl-slides, .sl-image {
+    height: 482px;
+    overflow: hidden;
+	position: relative;
+}
+
+.sl-content {
+    position: absolute;
+    overflow: hidden;
+    padding: 10px 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333333;
+    opacity: 0.7;
+    filter: alpha(opacity = 50);
+}
+
+.sl-content h3, .sl-content h3 a, .sl-content h3 a:hover {
+    font-family: Arial, Helvetica, Sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 2px 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.sl-content p, .sl-content p a, .sl-content p a:hover {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    line-height: 18px;
+}
+
+.sl-nav {
+    height: 12px;
+    text-align: center;
+    padding: 10px 0;
+    background: #333333;
+}
+
+.sl-pager a {
+    background-image: url('radio.png');
+    cursor:pointer;
+    margin: 0 8px 0 0;
+    padding: 0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    text-indent: -999px;
+    background-position: 0 0;
+    float: none;
+    line-height: 1;
+    opacity: 0.7;
+    filter: alpha(opacity = 70);
+}
+
+.sl-pager a:hover, .sl-pager a.activeSlide  {
+    text-decoration: none;
+    background-position: 0 -112px;
+    opacity: 1.0;
+    filter: alpha(opacity = 100);
+}
+
+
+.sl-prev-next {
+    position: absolute;
+    bottom: 170px;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.sl-prev {
+    float:left;
+    margin-left: 14px;
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.sl-prev:hover {
+    opacity: 0.8;
+    filter: alpha(opacity = 80);
+}
+
+ .sl-next {
+    float:right;
+    margin-right: 14px;
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.sl-next:hover {
+    opacity: 0.8;
+    filter: alpha(opacity = 80);
+}

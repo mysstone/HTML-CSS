@@ -1,0 +1,258 @@
+.toppy {
+	height: 150px;
+}
+
+#layout {
+	background-color: rgb(207, 184, 124);
+	}
+
+nav {
+	float: left;
+	width: 160px;
+	margin: 0px;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+
+#content {
+	margin-left: 200px;
+	border-left: 50px;
+	border-style: solid;
+}
+
+
+footer {
+	clear: both;
+}
+
+
+ul li {
+	list-style-image: url(square.gif);
+}
+
+
+.menu li a {
+	display: block;
+	list-style: none;
+	list-style-image: none;
+	margin-left: -2em;
+	text-decoration: none;
+	color: black;
+}
+
+
+nav li a:hover {
+	background-color: rgb(207, 184, 124);
+	text-decoration: underline; 
+}
+
+
+#header {
+	background-image: url(culogo.jpg);
+	background-repeat: no-repeat;
+	background-color: rgb(207, 184, 124);
+	height: 140px;
+	padding-left: 150px;
+	text-align: center;
+}
+
+
+h2 {
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	height: 35px;
+	background-color: transparent;
+}
+
+
+.span {
+	background-color: rgb(207, 184, 124);
+}
+
+
+#contact1 p {
+	background-color: white;
+	width: 50%;
+}
+
+
+#contact {
+	float: right;
+	width: 35%;
+	background-color: white;
+	border: 5px;
+	border-style: solid;
+	margin-right: 50px;
+	padding: 5px 5px 5px 5px;
+	min-height: 300px;
+	text-align: center;
+}
+
+
+#layout {
+	background-color: rgb(207, 184, 124);
+	}
+
+
+nav {
+	float: left;
+	width: 160px;
+	margin: 0px;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+
+#content {
+	margin-left: 200px;
+	border-left: 50px;
+	border-style: solid;
+}
+
+
+footer {
+	clear: both;
+}
+
+
+ul li {
+	list-style-image: url(square.gif);
+}
+
+
+.menu li a {
+	display: block;
+	list-style: none;
+	list-style-image: none;
+	margin-left: -2em;
+	text-decoration: none;
+	color: black;
+}
+
+
+nav li a:hover {
+	background-color: rgb(207,184, 124);
+	text-decoration: underline;
+}
+
+
+
+h2 {
+	padding-left: 40px;
+	background-repeat: no-repeat;
+	height: 35px;
+	background-color: transparent;
+}
+
+
+.span {
+	background-color: rgb(255, 255, 255);
+}
+
+
+#contact1 p {
+	background-color: white;
+	width: 50%;
+}
+
+
+#contact {
+	float: right;
+	width: 35%;
+	background-color: white;
+	border: 5px;
+	border-style: solid;
+	margin-right: 50px;
+	padding: 5px 5px 5px 5px;
+	min-height: 300px;
+	text-align: center;
+}
+
+
+header {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-style: solid;
+}
+
+
+footer {
+	border-style: solid;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+
+#layout {
+	border-style: solid;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+nav {
+	background-color: rgba(86,90,92);
+
+}
+
+.listTable tr:nth-of-type(even) {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.listTable tr:nth-of-type(odd) {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.center img {
+	box-shadow: 5px 5px 5px #888888;
+}
+
+-moz- .center img {
+	box-shadow: 5px 5px 5px #888888;
+}
+
+-webkit- .center img {
+	box-shadow: 5px 5px 5px #888888;
+}
+
+
+#tagline img {
+	box-shadow: 5px 5px 5px #888888;
+}
+
+.listTable {
+box-shadow: 5px 5px 5px #888888;
+border-radius: 25px;
+}
+
+
+#header h1 {
+	text-shadow: 2px 2px 2px #888888;
+}
+
+
+footer {
+background: linear-gradient(rgb(207, 184, 124), rgb(5,5,5));
+ background: -webkit-linear-gradient(rgb(207, 184, 124), rgb(5,5,5));
+background: -moz-linear-gradient(rgb(207, 184, 124), rgb(5,5,5));
+background: -ms-linear-gradient(rgb(207, 184, 124), rgb(5,5,5));
+background: -o-linear-gradient(rgb(207, 184, 124), rgb(5,5,5));
+	-ms- filte#r: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#565695, endColorstr=#000000);
+}
+
+
+#header {
+
+background: linear-gradient(left, rgb(207, 184, 124), rgb(207, 200, 124));
+background: -o-linear-gradient(left, rgb(207, 184, 124), rgb(0, 0, 0));
+background: -ms-linear-gradient(left, rgb(207, 184, 124), rgb(207, 200, 124));
+background: -moz-linear-gradient(left, rgb(207, 184, 124), rgb(207, 200, 124));
+background: -webkit-linear-gradient(left, rgb(207, 184, 124), rgb(207, 200, 124));
+background: linear-gradient(left, rgb(207, 184, 124), rgb(207, 200, 124));
+background-image: url(culogo.jpg);
+background-repeat: no-repeat;
+background-color: rgb(207, 184, 124);
+height: 140px;
+padding-left: 150px;
+text-align: center;
+}

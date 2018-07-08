@@ -1,0 +1,36 @@
+/*
+Open the print.css file in your text editor and add the following styles to the style sheet:
+Prevent the display of the nav container element.
+Set the left margin of the content container element to be 0 pixels
+Remove the background for the body element and set its margin and padding to 0 (on all sides).
+Remove the border for the layout container div.
+Save your changes to the print.css file
+View the about.html pages by double clicking on it (if you already have the about.html page open,
+you will need to refresh for you to be able to see the changes you have made to the print.css file).
+Choose print preview for "About Us page.  The menu and background image should disappear and the page
+should look something like the image below.  It is possible that the background images and colors that
+you set will not display.  That depends on the settings the user has defined for their browser
+(you can print or not print background colors and images):
+
+Author: Seth Moyes
+Date: March 17th, 2016
+*/
+
+nav {
+  display: none;
+}
+
+#content {
+  margin-left: 0px;
+
+}
+
+body {
+  background: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#layout {
+  border-style: none;
+}
